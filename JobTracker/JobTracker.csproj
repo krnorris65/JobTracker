@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-JobTracker-1B1C0FA6-0207-401C-9A0C-87F8E0C4A9CE</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20180301180455_firstMigration.cs" />
+    <Compile Remove="Data\Migrations\20180301180455_firstMigration.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180301184806_firstMigration.cs" />
+    <Compile Remove="Data\Migrations\20180301184806_firstMigration.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />

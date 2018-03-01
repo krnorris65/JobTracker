@@ -18,15 +18,14 @@ namespace JobTracker.Models
         public int CompanyId { get; set; }
         public Company Company { get; set; }
 
-        public int ContactId { get; set; }
+        public int? ContactId { get; set; }
         public Contact Contact { get; set; }
 
         public string Notes { get; set; }
 
         public bool Active { get; set; }
 
-        public int StatusId { get; set; }
-        public Status Status { get; set; }
+        public string Status { get; set; }
 
         [Required]
         public ApplicationUser User { get; set; }

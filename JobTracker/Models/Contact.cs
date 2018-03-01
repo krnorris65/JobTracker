@@ -21,7 +21,7 @@ namespace JobTracker.Models
         public string Position { get; set; }
 
         [Required]
-        public int CompanyId { get; set; }
+        public int? CompanyId { get; set; }
         public Company Company { get; set; }
 
         public string Notes { get; set; }

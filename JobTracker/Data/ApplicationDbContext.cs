@@ -12,8 +12,13 @@ namespace JobTracker.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        {
-        }
+        { }
+
+        public DbSet<JobTracker.Models.ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Contact> Contact { get; set; }
+        public DbSet<Job> Job { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
